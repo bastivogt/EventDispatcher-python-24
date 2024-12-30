@@ -28,7 +28,7 @@ class EventDispatcher():
         return cls()
     
     def __init__(self):
-        # [{"type": "STARTED", "listener": func}]
+        # [{"type": "STARTED", "listener": function}]
         self._listeners = []
 
     @property
