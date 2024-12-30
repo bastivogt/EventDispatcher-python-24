@@ -61,3 +61,6 @@ class EventDispatcher():
                 item["listener"](event)
                 return True
         return False
+    
+    def __repr__(self):
+        return f"EventDispatcher(listeners={self._listeners})"

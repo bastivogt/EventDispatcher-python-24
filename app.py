@@ -20,8 +20,9 @@ counter.eventDispatcher.add_listener(CounterEvent.COUNTER_STARTED, counter_start
 counter.eventDispatcher.add_listener(CounterEvent.COUNTER_CHANGED, counter_changed_handler)
 counter.eventDispatcher.add_listener(CounterEvent.COUNTER_FINISHED, counter_finished_handler)
 
-counter.eventDispatcher.remove_listener(CounterEvent.COUNTER_CHANGED, counter_changed_handler)
+# counter.eventDispatcher.remove_listener(CounterEvent.COUNTER_CHANGED, counter_changed_handler)
 
 print(id(counter.eventDispatcher.listeners_copy))
 print(id(counter.eventDispatcher._listeners))
+print(counter.eventDispatcher)
 counter.run()
